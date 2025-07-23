@@ -18,7 +18,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. Clone the repository:
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/yuktabande/usePopcorn
    cd final
    ```
 2. Install dependencies:
