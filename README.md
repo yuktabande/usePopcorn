@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# usePopcorn
+
+A React app for searching movies, rating them, and keeping track of your watched list. Built with hooks and custom components.
+
+## Features
+
+- Search movies using the OMDb API
+- View movie details and rate them
+- Add movies to your watched list
+- Persist watched movies using localStorage
+- Responsive and modern UI
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+1. Clone the repository:
+   ```sh
+   git clone <repo-url>
+   cd final
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-### `npm start`
+### Running the App
 
-Runs the app in the development mode.\
+Start the development server:
+```sh
+npm start
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Building for Production
 
-### `npm test`
+```sh
+npm run build
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+- `src/` — Source code
+  - `App.js` — Main app component
+  - `StarRating.js` — Custom star rating component
+  - `useMovies.js` — Custom hook for fetching movies
+  - `useLocalStorageState.js` — Custom hook for localStorage
+  - `useKey.js` — Custom hook for keyboard events
+  - `index.js`, `index.css` — Entry point and styles
+- `public/` — Static assets and HTML template
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Custom Hooks
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `useMovies`: Fetches movies from OMDb API.
+- `useLocalStorageState`: Persists state in localStorage.
+- `useKey`: Handles keyboard shortcuts.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+MIT
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
